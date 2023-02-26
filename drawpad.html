@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <!-- Coding By CodingNepal - youtube.com/codingnepal -->
 <html lang="en" dir="ltr">
+  
   <head>
     <meta charset="utf-8">
     <title>drawing pad</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
+    <script src="../scribbit1010.2.0/contract/scripts/mintnft.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -66,7 +68,7 @@
         </div>
         <div class="row buttons">
           <button class="clear-canvas">Clear Canvas</button>
-          <button class="save-img">Save As Image</button>
+          <button class="save-img" onclick="storeNFT">Save As Image</button>
         </div>
       </section>
       <section class="drawing-board">
