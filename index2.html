@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="1footer.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"></a>
+        <ul>
+            <!-- <li><a href="#" >Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li> -->
+            <li><a href="index.html" class="active">Log In</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="game-ground-platform-with-spaceman-alien-planet_107791-14572.avif" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Scribbit1010</h2>
+        <!-- <a href="#sec" id="btn">Login</a> -->
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>About Scribbit1010</h2>
+        <h3>A journey down the memory lane</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente laudantium temporibus iste! Temporibus rerum, vero consequuntur eum ipsum laboriosam fuga corporis magni veniam, consequatur dolorem quasi nisi quas perspiciatis minus!</p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header= document.querySelector('header');
+
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.top = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.35 + 'px';
+            mountains_front.style.bottom = value * 2 + 'px';
+            text.style.marginRight = value * 2.75 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 4 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+<body>
+    <footer>
+        <div class="footer-content">
+            <ul class="socials">
+                <li><a href="https://facebook.com/"><span class="fab fa-facebook-f"></span></a></li>
+                <li><a href="https://twitter.com/?lang=en"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="https://instagram.com/"><span class="fab fa-instagram"></span></a></li>
+                <li><a href="https://www.youtube.com/"><span class="fab fa-youtube"></span></a></li>
+                <li><a href="https://in.linkedin.com/"><span class="fab fa-linkedin"></span></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
